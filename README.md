@@ -6,9 +6,7 @@
 3. Go to app details and change permissions to Read, write and Direct Messages
 4. Take note of the app's Consumer Key and Consumer Token
 5. On the same tab, generate Access Token and Access Token Secret
-  5.1 Go to the Twitter profile your dev account is linked to 
-  -> Account -> Apps & Sessions and make sure your app has Read, write, and direct messages, if not regenerate the access tokens 
-  on the dev account
+   - Go to the Twitter profile your dev account is linked to -> Account -> Apps & Sessions and make sure your app has Read, write, and direct messages if not regenerate the access tokens on the dev account
 6. Take note of the app's numeric ID
 
 ## Get Account Activity API Access
