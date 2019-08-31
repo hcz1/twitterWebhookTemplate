@@ -1,0 +1,15 @@
+{
+  "name": "twitterwebhooktemplate",
+  "version": "1.0.0",
+  "description": "Creating the App 1. Create Twitter developer account 2. Create Twitter app - https://developer.twitter.com/en/apps 3. Go to app details and change permissions to Read, write and Direct Messages 4. Take note of the app's Consumer Key and Consumer Token 5. On the same tab, generate Access Token and Access Token Secret   5.1 Go to the Twitter profile your dev account is linked to    -> Account -> Apps & Sessions and make sure your app has Read, write, and direct messages, if not regenerate the access tokens    on the dev account 6. Take note of the app's numeric ID",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7"
+  }
+}
