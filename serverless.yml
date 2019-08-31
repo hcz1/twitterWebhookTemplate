@@ -27,7 +27,7 @@ provider:
   region: eu-west-1
 
   environment:
-    twitterDevEnvName: <TWITTER_DEV_ENV_NAME>
+    consumer_secret: <CONSUMER_SECRET>
 
 #package:
 #  exclude:

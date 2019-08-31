@@ -1,6 +1,6 @@
 # Twitter Webook using AWS Lambda and API Gateway (Serverless)
 
-Creating the App
+## Creating the App
 1. Create Twitter developer account
 2. Create Twitter app - https://developer.twitter.com/en/apps
 3. Go to app details and change permissions to Read, write and Direct Messages
@@ -11,11 +11,16 @@ Creating the App
   on the dev account
 6. Take note of the app's numeric ID
 
-Get Account Activity API Access
+## Get Account Activity API Access
 1. Go to https://developer.twitter.com/en/account/environments
 2. Setup dev environment, specify your app ID and specify an environment, this environement will be used to register your endpoint
   e.g. https://api.twitter.com/1.1/account_activity/all/prod/webhooks if you've set environement to `prod`
 
-Create Webhook Service
-1. Input consumerKey, consumerSecret, accessKey, accessSecret, webhookURL into scripts/config.js
+## Deploy AWS Webhook Service
+1. Edit serverless.yml environment: consumer_secret to your app consumer secret
+2. Ensure you have Serverless installed globally and configured with AWS correctly
+3. Run `sls deploy` and take not of the endpoint
+
+## Webhook Service Twitter Link
+1. Edit consumerKey, consumerSecret, accessKey, accessSecret, webhookURL into scripts/config.js
 2. Run `node register.js` keep note of response, this is the ID of the webhook
