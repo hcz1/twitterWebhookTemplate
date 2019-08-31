@@ -1,23 +1,4 @@
-# Welcome to Serverless!
-#
-# This file is the main config file for your service.
-# It's very minimal at this point and uses default values.
-# You can always add more config options for more control.
-# We've included some commented out config examples here.
-# Just uncomment any of them to get that config option.
-#
-# For full config options, check the docs:
-#    docs.serverless.com
-#
-# Happy Coding!
-
 service: twitterwebhooktemplate
-#app: your-app-name
-#tenant: your-tenant-name
-
-# You can pin your service to only deploy with a specific Serverless version
-# Check out our docs for more details
-# frameworkVersion: "=X.X.X"
 
 provider:
   name: aws
@@ -29,10 +10,6 @@ provider:
   environment:
     consumer_secret: <CONSUMER_SECRET>
 
-#package:
-#  exclude:
-#    - exclude-me.js
-#    - exclude-me-dir/**
 
 functions:
   crc:
@@ -42,25 +19,9 @@ functions:
         path: twitter/service
         method: get
 
-  listner:
-  handler: handler.listner
+  listener:
+  handler: handler.listener
   events:
     - http:
         path: twitter/service
         method: post
-
-#    Define function environment variables here
-#    environment:
-#      variable2: value2
-
-# you can add CloudFormation resource templates here
-#resources:
-#  Resources:
-#    NewResource:
-#      Type: AWS::S3::Bucket
-#      Properties:
-#        BucketName: my-new-bucket
-#  Outputs:
-#     NewOutput:
-#       Description: "Description for the output"
-#       Value: "Some output value"
