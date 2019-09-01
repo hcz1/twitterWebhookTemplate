@@ -25,3 +25,7 @@
 ## Subscribe to Account
 1. Ensure the previous step to edit scripts/config.js has been completed
 2. Run `node scripts/subscribe`
+
+## Testing
+1. Check the CRC lambda's cloudwatch logs to see if the event is firing properly
+2. Like a tweet on the subscribed accounts profile from another account, there should be an event in the listner lambda's cloudwatch logs
